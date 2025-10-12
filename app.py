@@ -5,6 +5,7 @@ from langchain_community.utilities import WikipediaAPIWrapper
 from langchain.agents.agent_types import AgentType
 from langchain.agents import Tool, initialize_agent
 from langchain.callbacks import StreamlitCallbackHandler
+import os
 
 # --- 1. Page Configuration ---
 st.set_page_config(
