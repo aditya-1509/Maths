@@ -1,0 +1,40 @@
+# Byte-code files
+*.pyc
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+/site/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# Distribution / build files
+dist/
+build/
+*.whl
+
+# Data files (if not intended for version control)
+*.sqlite3
+*.db
+*.csv
+*.json
+*.env
+
+# Notebook checkpoints
+.ipynb_checkpoints/
