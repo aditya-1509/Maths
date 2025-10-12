@@ -14,18 +14,21 @@ st.set_page_config(
 )
 st.title("🧮 Math Problem Solver & Search Assistant")
 
+os.environ['API_KEY']=os.getenv("API_KEY")
 
 with st.sidebar:
     st.header("Configuration")
-    st.markdown("Please enter your Groq API key to start.")
-    groq_api_key = st.text_input(label="Groq API Key", type="password")
+    st.markdown("The App is configured with Groq API key and is ready to start.")
+    st.markdown("##Groq API KEY -")
+    st.markdown('xxxxxxxxxxxxxxxxxxxxx')
+    groq_api_key = os.environ['API_KEY']
     st.markdown("---")
     st.markdown(
         "This app uses the Llama 3.1 model via Groq to solve math word problems and search for information using Wikipedia."
     )
 
 if not groq_api_key:
-    st.info("Please add your Groq API key in the sidebar to continue.")
+    st.info("Internal Server error! Reload the Page.")
     st.stop()
 
 
