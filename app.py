@@ -17,16 +17,8 @@ st.title("🧮 Math Problem Solver & Search Assistant")
 
 os.environ['API_KEY']=os.getenv("API_KEY")
 
-with st.sidebar:
-    st.header("Configuration")
-    st.markdown("The App is configured with Groq API key and is ready to start.")
-    st.markdown("##Groq API KEY -")
-    st.markdown('xxxxxxxxxxxxxxxxxxxxx')
-    groq_api_key = os.environ['API_KEY']
-    st.markdown("---")
-    st.markdown(
-        "This app uses the Llama 3.1 model via Groq to solve math word problems and search for information using Wikipedia."
-    )
+groq_api_key = os.environ['API_KEY']
+
 
 if not groq_api_key:
     st.info("Internal Server error! Reload the Page.")
